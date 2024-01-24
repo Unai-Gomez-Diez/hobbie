@@ -1,1 +1,12 @@
-<p>musica works!</p>
+<h1>Musica</h1>
+<div *ngFor="let music of musicas">
+  <h2>{{ music.title }}</h2>
+  <p>{{ music.description }}</p>
+  <img [src]="music.url_cover" alt="{{ music.title }} Cover Image">
+  <audio controls>
+    <source [src]="music.url_audio" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+  <p>Publish Date: {{ music.publish_date }}</p>
+  <hr>
+</div>
