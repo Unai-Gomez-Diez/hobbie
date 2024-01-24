@@ -7,7 +7,7 @@ import {Photo} from "./modelos/photo.model";
   providedIn: 'root',
 })
 export class PhotoService {
-  private apiUrl = 'URL_DEL_JSON'; // Reemplaza esto con la URL real de tu JSON
+  private apiUrl = 'https://rememora.sitehub.es/api/v1/images/images.json'; // Reemplaza esto con la URL real de tu JSON
 
   constructor(private http: HttpClient) {}
 
