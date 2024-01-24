@@ -1,1 +1,7 @@
-<p>fotos works!</p>
+<div *ngFor="let photo of fotos">
+  <h2>{{ photo.title }}</h2>
+  <p>{{ photo.description }}</p>
+  <img [src]="photo.images.medium" alt="{{ photo.title }}">
+  <p>Publish Date: {{ photo.publish_date }}</p>
+  <hr>
+</div>

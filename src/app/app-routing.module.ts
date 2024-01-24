@@ -5,6 +5,7 @@ import { VideosComponent } from './videos/videos.component';
 import { FotosComponent } from './fotos/fotos.component';
 import { BodyComponent } from './body/body.component';
 
+
 const routes: Routes = [
   { path: "musica", component: MusicaComponent },
   { path: "videos", component: VideosComponent },

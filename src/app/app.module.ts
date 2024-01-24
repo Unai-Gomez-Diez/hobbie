@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { MusicaComponent } from './music/musica.component';
+import {HttpClientModule} from "@angular/common/http";
+import {FotosComponent} from "./fotos/fotos.component";
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { MusicaComponent } from './music/musica.component';
     HeaderComponent,
     FooterComponent,
     BodyComponent,
-    MusicaComponent
+    MusicaComponent,
+    FotosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
