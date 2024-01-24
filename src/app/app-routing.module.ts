@@ -7,10 +7,11 @@ import { BodyComponent } from './body/body.component';
 
 
 const routes: Routes = [
+  { path: "", component: BodyComponent },
   { path: "musica", component: MusicaComponent },
   { path: "videos", component: VideosComponent },
   { path: "fotos", component: FotosComponent },
-  { path: "", component: BodyComponent }
+
 ];
 
 @NgModule({

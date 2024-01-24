@@ -1,28 +1,28 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <div class="container text-center mt-5">
   <h1>Mis Hobbies</h1>
-  <table class="mt-3">
+  <table class="mt-3 mx-auto">
     <tr>
       <td>
-        <a [routerLink]="['/music']">
-          <img src="assets/image/music.jpg" alt="Musica" class="img-fluid">
-        </a>
+        <button type="button" class="btn btn-primary btn-block" routerLink="/music">
+          <img src="assets/image/musica.png" alt="Musica" class="img-fluid d-block"
+            style="width: 300px; height: 300px; " routerLink="/music">
+          Musica
+        </button>
       </td>
       <td>
-        <a [routerLink]="['/camera']">
-          <img src="assets/image/camera.jpg" alt="Fotos" class="img-fluid">
-        </a>
+        <button type="button" class="btn btn-success btn-block" routerLink="/camera">
+          <img src="assets/image/fotos.png" alt="Fotos" class="img-fluid d-block" style="width: 300px; height: 300px;"
+            routerLink="/camera">
+          Fotos
+        </button>
       </td>
       <td>
-        <a [routerLink]="['/video']">
-          <img src="assets/image/video.jpg" alt="Videos" class="img-fluid">
-        </a>
+        <button type="button" class="btn btn-danger btn-block" routerLink="/video">
+          <img src="assets/image/videos.png" alt="Videos" class="img-fluid d-block" style="width: 300px; height: 300px;"
+            routerLink="/video">
+          Videos
+        </button>
       </td>
-    </tr>
-    <tr>
-      <td>Musica</td>
-      <td>Fotos</td>
-      <td>Videos</td>
     </tr>
   </table>
 </div>
